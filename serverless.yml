@@ -4,6 +4,13 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
+  httpApi:
+    cors:
+      allowedOrigins:
+        - https://main.d1k1yw17polfc4.amplifyapp.com
+      allowedMethods:
+        - POST
+      maxAge: 6000 # In seconds
 
 functions:
   api:
