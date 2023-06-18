@@ -10,5 +10,6 @@ functions:
     handler: index.handler
     events:
       - httpApi:
-          path: /
-          method: get
+
+plugins:
+  - serverless-offline
