@@ -14,9 +14,11 @@ provider:
 
 functions:
   api:
-    handler: index.handler
+    handler: src/lambdas/words-statistic/handler.handler
     events:
       - httpApi:
+          path: /words-statistic
+          method: post
 
 plugins:
   - serverless-offline
